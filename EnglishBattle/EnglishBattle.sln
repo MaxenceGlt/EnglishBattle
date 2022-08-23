@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnglishBattle", "EnglishBattle\EnglishBattle.csproj", "{42D8C67D-AD45-4219-BC24-F005C155F21A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnglishBattle.Data", "EnglishBattle.Data\EnglishBattle.Data.csproj", "{AA933760-902B-492B-8EF7-678CC19B9749}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42D8C67D-AD45-4219-BC24-F005C155F21A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D8C67D-AD45-4219-BC24-F005C155F21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D8C67D-AD45-4219-BC24-F005C155F21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42D8C67D-AD45-4219-BC24-F005C155F21A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA933760-902B-492B-8EF7-678CC19B9749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA933760-902B-492B-8EF7-678CC19B9749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA933760-902B-492B-8EF7-678CC19B9749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA933760-902B-492B-8EF7-678CC19B9749}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
