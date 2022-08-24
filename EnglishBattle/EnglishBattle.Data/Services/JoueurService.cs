@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace EnglishBattle.Data.Services
 {
-    public class UtilisateurService
+    public class JoueurService
     {
         private EnglishBattleEntities context;
 
-        public UtilisateurService(EnglishBattleEntities context)
+        public JoueurService(EnglishBattleEntities context)
         {
             this.context = context;
         }

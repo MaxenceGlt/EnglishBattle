@@ -29,7 +29,7 @@ namespace EnglishBattle.Models
 
         [Required]
         [Display(Name = "Ville")]
-        public int IdVille { get; set; }
+        public string Ville { get; set; }
 
         [Required]
         [Display(Name = "Niveau")]

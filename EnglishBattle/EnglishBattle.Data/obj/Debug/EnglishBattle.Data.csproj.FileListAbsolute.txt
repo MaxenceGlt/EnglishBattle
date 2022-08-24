@@ -12,3 +12,17 @@ C:\Users\motaygas\RiderProjects\EnglishBattle\EnglishBattle.Data\obj\Debug\Engli
 C:\Users\motaygas\RiderProjects\EnglishBattle\EnglishBattle.Data\obj\Debug\EnglishBattle.Data.csproj.CopyComplete
 C:\Users\motaygas\RiderProjects\EnglishBattle\EnglishBattle.Data\obj\Debug\EnglishBattle.Data.dll
 C:\Users\motaygas\RiderProjects\EnglishBattle\EnglishBattle.Data\obj\Debug\EnglishBattle.Data.pdb
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\bin\Debug\EnglishBattle.Data.dll.config
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\bin\Debug\EnglishBattle.Data.dll
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\bin\Debug\EnglishBattle.Data.pdb
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\bin\Debug\EntityFramework.dll
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\bin\Debug\EntityFramework.xml
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\obj\Debug\EnglishBattle.Data.csproj.AssemblyReference.cache
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\obj\Debug\EnglishBattle.Data.csproj.CoreCompileInputs.cache
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\obj\Debug\EnglishBattle.Data.csproj.CopyComplete
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\obj\Debug\EnglishBattle.Data.dll
+C:\Users\motaygas\Documents\4eme_annee\Net\EnglishBattle\EnglishBattle\EnglishBattle.Data\obj\Debug\EnglishBattle.Data.pdb
