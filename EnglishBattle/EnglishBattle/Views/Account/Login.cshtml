@@ -1,12 +1,10 @@
-﻿using System.Web.Optimization;
-
-@model EnglishBattle.Data.Services.ConnexionViewModel
+﻿@model EnglishBattle.Data.Services.ConnexionViewModel
 
     @{
     ViewBag.Title = "Connexion";
 }
 
-<h2>Connexion</h2>
+<h2>Bienvenue sur English Battle !</h2>
 
 
     @using (Html.BeginForm()) 
@@ -19,32 +17,61 @@
             @ViewBag.Error 
         </div>
     }
-    <div class="form-horizontal">
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Connexion" class="btn btn-default" />
-            </div>
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
         </div>
     </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Connexion" class="btn btn-default" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <a href="/account/register">inscription</a>
+        </div>
+    </div>
+</div>
 }
+
+<div class="row">
+    <h2>Hall of Fame</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Joueur</th>
+                <th scope="col">Score</th>
+            </tr>
+        </thead>
+        <tbody>
+      
+            @foreach (var item in ViewBag.dictionary)
+            {
+                <tr>
+                    <th scope="row">@item.Key</th>
+                    <td>@item.Value</td>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval");

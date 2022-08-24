@@ -20,6 +20,10 @@ namespace EnglishBattle.Controllers
 
         public ActionResult Login()
         {
+            // Récupération du hall of fame
+            PartieService partieService = new PartieService(new EnglishBattleEntities());
+            Dictionary<string, int> dictionary = partieService.GetTopPlayers();
+            ViewBag.dictionary = dictionary;
             // renvoie la vue
             return View();
         }
@@ -31,7 +35,7 @@ namespace EnglishBattle.Controllers
             // vérification coté serveur que les données sont valides
             if (ModelState.IsValid)
             {
-                // ici on vérifie si l'utilisateur en base de données
+                // ici on vérifie si l'utilisateur est en base de données
                 UtilisateurService utilisateurService = new UtilisateurService(new EnglishBattle.Data.EnglishBattleEntities());
 
                 Joueur joueur = utilisateurService.GetItem(model.Email, model.Password);
@@ -42,7 +46,7 @@ namespace EnglishBattle.Controllers
                     Session["utilisateur"] = joueur;
 
                     // effectue un redirect avec l'url Home/Index
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Game");
                 }
                 else
                 {

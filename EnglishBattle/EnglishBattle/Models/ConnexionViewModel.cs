@@ -18,5 +18,7 @@ namespace EnglishBattle.Data.Services
         [Display(Name = "Mot de passe")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+
+        public Dictionary<string, int> dictionary { get; set; }
     }
 }

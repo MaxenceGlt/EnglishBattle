@@ -1,0 +1,60 @@
+﻿
+@model EnglishBattle.Data.Services.PartieViewModel
+
+@{
+    ViewBag.Title = "Game";
+}
+
+<<div class=" container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>ENGLISH BATTLE</h2>
+        </div>
+        <div class="col-md-4">
+            @ViewBag.JoueurInfo
+        </div>
+        <div class="col-md-4">
+            <a>déconnexion</a>
+        </div>
+    </div>
+    <div class="row">
+        <h1>Question @ViewBag.compteur : le verbe @ViewBag.verbe.baseVerbale</h1>
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        <div class="row">
+            <div class="col-md-2">
+                @ViewBag.verbe.baseVerbale
+            </div>
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.participePasse, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.participePasse, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.preterit, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.preterit, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Envoyer" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval");
+
+
+    <script>
+        // Timeout de 60 sec
+        window.setTimeout(function () {
+        }, 60000)
+
+    </script>
+}
